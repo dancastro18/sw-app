@@ -99,7 +99,7 @@ const DetailsPage =()=>{
                 if(Array.isArray(value)) return null;
                 return (
                     <DetailItem key={key}>
-                        <strong>{key.replace(/_/g,' ')}</strong>{value}
+                        <strong>{key.replace(/_/g,'')}: </strong>{value}
                     </DetailItem>
                 );
             })}

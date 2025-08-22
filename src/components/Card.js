@@ -42,7 +42,7 @@ const Card = ({ name, type, details, url })=>{
 
     const detailUrl = `/${type}/${encodeURIComponent(btoa(url))}`;
     return (
-        <CardContainer>
+        <CardContainer to={detailUrl}>
             <CardTitle>{name}</CardTitle>
             {details && Object.entries(details).map(([key,value])=>(
                 <CardDetail key={key}>
